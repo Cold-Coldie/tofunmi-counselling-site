@@ -1,0 +1,89 @@
+.navbarWrapper {
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 0.2rem 0.8rem 0.1rem gray;
+  padding: 0.8rem 2rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nameLogo {
+  color: var(--purple);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nameLogo a {
+  text-decoration: none;
+  color: var(--purple);
+}
+
+.links {
+  margin-left: auto;
+}
+
+.links a {
+  text-decoration: none !important;
+}
+
+.individualLinks {
+  margin: 0 1rem;
+  color: var(--purple);
+  cursor: pointer;
+  line-height: 1rem;
+  padding-bottom: 1.2rem;
+}
+
+.currentPath {
+  border-bottom: 3px solid var(--purple);
+  padding-bottom: 1.2rem;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+.menuDropDownWrapper {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 4.7rem;
+  right: 0.1rem;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.3px);
+  -webkit-backdrop-filter: blur(9.3px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menuDropDown {
+  background-color: rgba(231, 213, 253, 0.842);
+  width: 50%;
+  border-radius: 1rem;
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+  z-index: 5;
+}
+
+.individualDropDownItems {
+  padding: 1rem;
+  text-align: center;
+}
+
+.individualDropDownItems a {
+  text-decoration: none;
+  color: var(--purple);
+  font-weight: 600;
+}
+
+.individualDropDownCurrentPath {
+  background-color: rgba(210, 173, 255, 0.919);
+  padding: 0.5rem 20%;
+  border-radius: 1rem;
+}

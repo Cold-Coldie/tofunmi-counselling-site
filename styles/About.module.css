@@ -1,0 +1,78 @@
+.pageContainer {
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.textWrapper {
+  width: 40vw;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+
+.textHeading {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--pink);
+  margin: 5rem 0;
+  border-bottom: 5px solid var(--pink);
+}
+
+.textName {
+  font-size: 2rem;
+  color: var(--pink);
+  margin: 0.2rem;
+}
+
+.textbody1 {
+  margin: 0 3rem;
+}
+
+.textbody2 {
+  margin: 2rem 3rem;
+}
+
+.textbody3 {
+  margin: 2rem 3rem;
+  color: var(--pink);
+  font-size: 1.9rem;
+  font-family: "Agbalumo", sans-serif;
+}
+
+.imageWrapper {
+  position: relative;
+  margin-top: -55rem;
+  right: -15vw;
+  z-index: -10;
+}
+
+.imageContainer {
+  background-color: rgb(250, 234, 106);
+  width: fit-content;
+  padding: 10rem 15rem;
+  border-radius: 50%;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .imageWrapper {
+    margin-top: -2rem;
+    right: -13vw;
+  }
+
+  .imageContainer {
+    background-color: rgb(250, 234, 106);
+    width: fit-content;
+    padding: 3rem 7rem;
+    border-radius: 50%;
+    margin-left: auto;
+  }
+
+  .textWrapper {
+    width: 100vw;
+  }
+
+  .textHeading {
+    margin: 5rem 3rem;
+    border-bottom: 5px solid var(--pink);
+  }
+}
