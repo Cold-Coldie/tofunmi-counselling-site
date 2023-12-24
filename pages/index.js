@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const testimonials = [
@@ -117,7 +118,7 @@ export default function Home() {
             Wonder what book is being talked about in some of the reviews?
           </div>
 
-          <a href="/resources">
+          <Link href="/resources">
             <button className={styles.wonderButton}>
               Check it out{" "}
               <Image
@@ -127,7 +128,7 @@ export default function Home() {
                 alt="Chevron Right"
               />
             </button>
-          </a>
+          </Link>
         </div>
 
         <div style={{ marginTop: "4rem" }}></div>

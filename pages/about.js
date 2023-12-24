@@ -6,7 +6,7 @@ import Link from "next/link";
 import toast, { Toaster } from "react-hot-toast";
 import Head from "next/head";
 
-const about = () => {
+const About = () => {
   const [screenWidth, setScreenWidth] = useState(null);
 
   const copyEmail = () => {
@@ -68,7 +68,7 @@ const about = () => {
               right decisions and become aware of yourself.
             </div>
 
-            <div className={styles.textbody3}>Let's get started!</div>
+            <div className={styles.textbody3}>{`Let's get started!`}</div>
           </div>
 
           <div className={styles.imageWrapper}>
@@ -188,7 +188,7 @@ const about = () => {
               right decisions and become aware of yourself.
             </div>
 
-            <div className={styles.textbody3}>Let's get started!</div>
+            <div className={styles.textbody3}>{`Let's get started!`}</div>
           </div>
 
           <div className={styless.socialsWrapper} style={{ marginTop: "5rem" }}>
@@ -265,4 +265,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;
