@@ -161,7 +161,7 @@ const Services = () => {
           </div>
           <div className={styles.supportCallSecondColumn}>
             <Image
-              src={"/static/images/help-a-soul.avif"}
+              src={"/static/images/help-a-soul.jpg"}
               width={400}
               height={400}
               alt="Support Call icon"
