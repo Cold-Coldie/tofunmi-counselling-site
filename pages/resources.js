@@ -5,7 +5,7 @@ import ParentGroupForm from "../components/forms/ParentGroupForm";
 import { Toaster } from "react-hot-toast";
 import Head from "next/head";
 
-const resources = () => {
+const Resources = () => {
   const [showParentGroupForm, setShowParentGroupForm] = useState(false);
 
   return (
@@ -76,16 +76,16 @@ const resources = () => {
                 <div>Description</div>
                 <div style={{ display: "grid" }}>
                   We are in a world pressurized with sexual perversion.
-                  Ignorance on your part or your child's part is not an excuse.
-                  Before your children get the wrong information from out there,
-                  give them the right information.
+                  Ignorance on your part or your {`child's`} part is not an
+                  excuse. Before your children get the wrong information from
+                  out there, give them the right information.
                   <div></div>I have written a book on Sex Education that deals
                   explicitly on how to go about educating your children and
                   students. Sex Education is a conversation many parents have
                   failed to have with their children. Even parents who desire to
-                  teach it don't know how to. This book will guide you on the
-                  best approach to teach Sex Education. It is unique in that it
-                  has been categorized into age groups. You will be guided on
+                  teach it {`don't`} know how to. This book will guide you on
+                  the best approach to teach Sex Education. It is unique in that
+                  it has been categorized into age groups. You will be guided on
                   what to say depending on the age of your child. It also
                   addresses signs to look out for and what to do in cases of
                   sexual grooming and abuse.
@@ -139,7 +139,7 @@ const resources = () => {
           <div className={styles.whatsappSectionWrapper}>
             <div className={styles.bookImageWrapper}>
               <div className={styles.bookHeading}>
-                Your Child's Psyche and You <br /> (WhatsApp Group)
+                Your {`Child's`} Psyche and You <br /> (WhatsApp Group)
               </div>
 
               <Image
@@ -154,7 +154,7 @@ const resources = () => {
             <div className={styles.bookDetails}>
               <div>
                 <div>Name of Group</div>
-                <div>Your Child's Psyche and You</div>
+                <div>Your {`Child's`} Psyche and You</div>
               </div>
 
               <div>
@@ -212,4 +212,4 @@ const resources = () => {
   );
 };
 
-export default resources;
+export default Resources;

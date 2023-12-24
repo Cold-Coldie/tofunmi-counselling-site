@@ -7,7 +7,7 @@ import toast, { Toaster } from "react-hot-toast";
 import Link from "next/link";
 import Head from "next/head";
 
-const services = () => {
+const Services = () => {
   const router = useRouter();
 
   const [showSupportCall, setShowSupportCall] = useState(false);
@@ -153,7 +153,9 @@ const services = () => {
 
             <div className={styles.supportCallButtonWrapper}>
               <a href="https://wa.link/x9f92l" target="_blank">
-                <button className={styles.supportCallButton}>LET'S TALK</button>{" "}
+                <button className={styles.supportCallButton}>
+                  {`LET'S`} TALK
+                </button>{" "}
               </a>
             </div>
           </div>
@@ -248,4 +250,4 @@ const services = () => {
   );
 };
 
-export default services;
+export default Services;
