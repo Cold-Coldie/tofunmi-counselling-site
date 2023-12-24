@@ -1,0 +1,215 @@
+/* THIS IS FOR THE FORM MODAL */
+
+.formBackDrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 4.6rem;
+  right: 0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.3px);
+  -webkit-backdrop-filter: blur(9.3px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.formWrapper {
+  transform: translateY(-10%);
+}
+
+.formContainer {
+  background-color: white;
+  border: 2px solid var(--pink);
+  border-radius: 2rem;
+  height: fit-content !important;
+  width: 40vw;
+  padding: 2rem;
+}
+
+.formInputWrapper {
+  display: grid;
+  margin-bottom: 1rem;
+}
+
+.formInputWrapper label {
+  color: var(--pink);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+
+.formInputWrapper input {
+  border: 2px solid var(--pink);
+  border-radius: 2rem;
+  padding: 0.3rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  width: 80%;
+  outline: none;
+}
+
+.formInputWrapper select {
+  border: 2px solid var(--pink);
+  border-radius: 2rem;
+  padding: 0.3rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  width: 90%;
+  outline: none;
+}
+
+.formInputWrapper textarea {
+  border: 2px solid var(--pink);
+  border-radius: 2rem;
+  padding: 0.3rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  width: 80%;
+  outline: none;
+}
+
+.formNote {
+  margin: 1.2rem 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--pink);
+  border: 3px dashed var(--pink);
+  padding: 0.3rem 1rem;
+}
+
+.formFooter div {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  justify-content: end;
+}
+
+.formFooter div button {
+  border: none;
+  padding: 0.6rem 1.8rem;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.formFooter div .formCancel {
+  background-color: white;
+  border: 2px solid var(--pink);
+  color: var(--pink);
+  font-weight: 600;
+}
+
+.formFooter div .formSubmit {
+  background-color: var(--pink);
+  color: white;
+  font-weight: 600;
+}
+
+/* START ------- THIS STYLING IS FOR THE CHECKBOX ------------- */
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border: 2px solid var(--pink);
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: var(--pink);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* ---------- THIS STYLING IS FOR THE CHECKBOX -------------- */
+
+@media screen and (max-width: 950px) {
+  .formContainer {
+    height: 70vh;
+    width: 70vw;
+  }
+
+  .formInputWrapper {
+    display: grid;
+    margin-bottom: 0.5rem;
+  }
+
+  .formInputWrapper label {
+    color: var(--pink);
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+  }
+
+  .formInputWrapper input {
+    padding: 0.3rem 2rem;
+    margin-top: 0.2rem;
+  }
+
+  .formNote {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    border: 2px dashed var(--pink);
+  }
+}

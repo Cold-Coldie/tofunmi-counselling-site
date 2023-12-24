@@ -1,0 +1,204 @@
+/* .bannerWrapper {
+  background-color: rgb(251, 231, 203);
+  border-radius: 5rem;
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.bannerFirstColumn {
+  width: 50%;
+}
+
+.bannerHeading {
+  color: rgb(154, 127, 38);
+  font-size: 3rem;
+  font-family: "Agbalumo", sans-serif;
+  margin-top: 1rem;
+}
+
+.bannerBody {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+} */
+
+.container {
+  padding: 10%;
+}
+
+.bookSessionWrapper {
+  background-color: rgb(250, 228, 229);
+  border-radius: 5rem;
+  padding: 4rem;
+  display: flex;
+  /* margin-top: 2rem; */
+  align-items: center;
+}
+
+.bookSessionFirstColumn {
+  width: 50%;
+}
+
+.bookSessionHeading {
+  text-align: center;
+  color: rgb(204, 65, 72);
+  font-size: 3rem;
+  font-family: "Agbalumo", sans-serif;
+  margin-top: 1rem;
+}
+
+.bookSessionBody {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.bookSessionButtonWrapper {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.bookSessionButton {
+  border: none;
+  background-color: rgb(204, 65, 72);
+  color: rgb(250, 228, 229);
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border-radius: 3rem;
+}
+
+.supportCallWrapper {
+  background-color: rgb(249, 227, 206);
+  border-radius: 5rem;
+  padding: 4rem;
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.supportCallFirstColumn {
+  width: 50%;
+}
+
+.supportCallHeading {
+  text-align: center;
+  color: rgb(217, 132, 52);
+  font-size: 3rem;
+  font-family: "Agbalumo", sans-serif;
+  margin-top: 1rem;
+}
+
+.supportCallBody {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.supportCallButtonWrapper {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.supportCallButton {
+  border: none;
+  background-color: rgb(217, 132, 52);
+  color: rgb(249, 227, 206);
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border-radius: 3rem;
+}
+
+.socialsWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.socialsText {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.socials {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials img {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    padding: 5%;
+  }
+
+  .bookSessionWrapper {
+    display: grid;
+  }
+
+  .bookSessionFirstColumn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bookSessionFirstColumn img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .bookSessionHeading {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .bookSessionBody {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 0 0.1rem;
+    width: 100%;
+  }
+
+  .supportCallWrapper {
+    display: grid;
+  }
+
+  .supportCallFirstColumn {
+    width: 100%;
+  }
+
+  .supportCallHeading {
+    font-size: 1.8rem;
+  }
+
+  .supportCallBody {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 0 0.1rem;
+    width: 100%;
+  }
+
+  .supportCallSecondColumn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .supportCallSecondColumn img {
+    height: 200px;
+    width: 200px;
+  }
+}
