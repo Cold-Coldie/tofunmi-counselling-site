@@ -83,7 +83,10 @@ const About = () => {
             </div>
           </div>
 
-          <div className={styless.socialsWrapper} style={{ marginTop: "5rem" }}>
+          <div
+            className={styless.socialsWrapper}
+            style={{ margin: "5rem 2rem" }}
+          >
             <div>
               <div className={styless.socialsText}>
                 There is so much we can do together. Follow me on...
@@ -191,7 +194,10 @@ const About = () => {
             <div className={styles.textbody3}>{`Let's get started!`}</div>
           </div>
 
-          <div className={styless.socialsWrapper} style={{ marginTop: "5rem" }}>
+          <div
+            className={styless.socialsWrapper}
+            style={{ margin: "5rem 2rem" }}
+          >
             <div>
               <div className={styless.socialsText}>
                 There is so much we can do together. Follow me on...
