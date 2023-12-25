@@ -140,7 +140,8 @@
 }
 
 .starWrapper {
-  scale: 0.3;
+  /* scale: 0.3; */
+  transform: scale(0.3);
   position: absolute;
   top: 10%;
   right: 0rem;
@@ -148,7 +149,8 @@
 }
 
 .triangleWrapper {
-  scale: 0.3;
+  /* scale: 0.3; */
+  transform: scale(0.3);
   position: absolute;
   top: 30%;
   right: 60%;
@@ -156,7 +158,8 @@
 }
 
 .circleWrapper1 {
-  scale: 0.3;
+  /* scale: 0.3; */
+  transform: scale(0.3);
   position: absolute;
   top: 47%;
   right: 50%;
@@ -164,7 +167,8 @@
 }
 
 .circleWrapper2 {
-  scale: 0.3;
+  /* scale: 0.3; */
+  transform: scale(0.3);
   position: absolute;
   top: 10%;
   right: 80%;
@@ -172,7 +176,8 @@
 }
 
 .squareWrapper1 {
-  scale: 0.3;
+  /* scale: 0.3; */
+  transform: scale(0.3);
   position: absolute;
   top: 67%;
   right: 10%;
@@ -180,7 +185,8 @@
 }
 
 .squareWrapper2 {
-  scale: 0.3;
+  /* scale: 0.3; */
+  transform: scale(0.3);
   position: absolute;
   top: 50%;
   right: 85%;
@@ -331,7 +337,8 @@
 
 @media screen and (max-width: 970px) {
   .pageHeading {
-    scale: 0.8;
+    /* scale: 0.8; */
+    transform: scale(0.8);
     font-size: 2.5rem;
     font-weight: 400;
     padding: 0.5rem 2rem;
@@ -343,7 +350,8 @@
   .circleWrapper2,
   .squareWrapper1,
   .squareWrapper2 {
-    scale: 0.2;
+    /* scale: 0.2 !important; */
+    transform: scale(0.2);
   }
 
   .testimonialWrapper {

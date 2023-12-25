@@ -95,7 +95,7 @@ export default function Home() {
         <div className={styles.testimonialWrapper}>
           <div className={styles.testimonialHeading}>Reviews</div>
 
-          <Slider {...carouselSettings}>
+          <Slider {...carouselSettings} style={{ margin: "-1rem" }}>
             {testimonials?.map((item, index) => (
               <div className={styles.singleTestimonialWrapper} key={index}>
                 <div className={styles.singleTestimonial1}>

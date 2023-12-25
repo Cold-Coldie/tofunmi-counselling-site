@@ -92,6 +92,10 @@
 }
 
 @media screen and (max-width: 500px) {
+  .pageHeading {
+    font-size: 2.2rem;
+  }
+
   .bookHeading {
     font-size: 1.5rem;
   }
@@ -108,10 +112,12 @@
   .bookDetails div :nth-child(even) {
     width: 50% !important;
     font-size: 0.8rem;
+    transform: scaleX(0.8);
   }
 
   .bookDetails div div button {
-    scale: 0.8;
+    /* scale: 0.8; */
+    transform: scale(0.8);
   }
 }
 
